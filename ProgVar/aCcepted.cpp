@@ -3,7 +3,7 @@
      
     int main () {
         string S;
-        std::cin >> S;
+        cin >> S;
         
         int L = S.size();
         string ans = "AC";
