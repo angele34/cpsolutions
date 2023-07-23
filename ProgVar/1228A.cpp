@@ -5,12 +5,11 @@ int main() {
     cin >> l >> r;
     
     for (x = l; x <= r; x++) {
-        int temp = x;
         string s = to_string(x);
         set<int> distinctDigits(s.begin(), s.end());
         
         if (s.size() == distinctDigits.size()) {
-            cout << temp;
+            cout << x;
             return 0;
         }
     }
