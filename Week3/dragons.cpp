@@ -12,13 +12,13 @@ int main() {
         d.push_back({x,y});
     } 
     sort(d.begin(), d.end());
-    
+
     bool proceed = true;
     for (const auto& pair : d) {
         if (s <= pair.first) {
             proceed = false;
             break;
-        } else s += pair.second; proceed = true;
+        } else s += pair.second;
     }
     cout << (proceed ? "YES\n" : "NO\n");
     return 0;
