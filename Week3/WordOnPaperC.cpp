@@ -5,7 +5,6 @@ int main() {
     int t;
     cin >> t;
     
-    vector<char> v;
     while (t--) {
         char grid[8][8];
         for (int i = 0; i < 8; i++) {
