@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define lli long long int
+
+int main() {
+    int t;
+    cin >> t;
+
+    while(t--) {
+        int n; cin >> n;
+        vector<lli> v(n), b(n);
+        for (int i = 0; i < n; i++) {
+            cin >> v[i];
+        }
+        if (v[0] == 1) b[0] = 2;
+        else b[0] = 1;
+        for (int i = 1; i < n; i++) {
+            if (v[i] == b[i-1] +1) {
+                b[i] = b[i-1] + 2;
+            } else {
+                b[i] = b[i-1] + 1;
+            }
+        }
+        cout << b[n-1] << '\n';
+    }
+    return 0;
+}
