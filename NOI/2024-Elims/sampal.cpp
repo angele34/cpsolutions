@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+// Could be optimized
 int main() {
 	ios_base::sync_with_stdio(false);
     cin.tie(NULL);
